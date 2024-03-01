@@ -1,0 +1,74 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+/* .block {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+} */
+
+input {
+    height: 2.5rem;
+    width: 2.5rem;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    /* background-color: lightsalmon; */
+    margin: 2px;
+    border: 2px solid transparent;
+}
+
+input:nth-child(3n) {
+    margin-right: 6px;
+}
+
+/* remove up and down arrows */
+/* For Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.row:nth-child(3n) {
+    margin-bottom: 6px;
+}
+
+h1 {
+    margin-bottom: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin: 16px;
+}
+
+@media (width < 520px) {
+    input {
+        height: 2rem;
+        width: 2rem;
+        font-size: 14px;
+    }
+}
+
+@media (width < 430px) {
+    input {
+        height: 1.5rem;
+        width: 1.5rem;
+        font-size: 13px;
+    }
+}
+
+@media (width < 360px) {
+    input {
+        height: 1.2rem;
+        width: 1.2rem;
+        font-size: 12px;
+    }
+}
